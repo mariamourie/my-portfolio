@@ -1,0 +1,235 @@
+@font-face {
+    font-family: font;
+    src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+:root {
+    --textColorLight: hsl(236, 13%, 42%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style-type: none;
+    font-family: font;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body, .projects, .box, .box-project, footer, footer form, .text-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    background-color: #1a1919;
+    color: #FFF;
+    font-size: 16px;
+    width: 100%;
+    text-align: justify;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    background-image: url(./assets/images/about-me-background.jpg);
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+}
+header h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #d400ff;
+}
+header h3, header h4 {
+    font-weight: 400;
+}
+header a {
+    text-align: center;
+    align-content: center;
+    background-color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    width: 60%;
+    height: 50px;
+    padding: 10px;
+    margin: 15px 0px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+header a:hover {
+    background-color: #d400ff;
+    color: hsl(0, 0%, 100%);
+}
+.about-me {
+    padding: 15px;
+}
+.about-me .text-about-me {
+    padding: 15px;
+}
+.text-about-me h2 {
+    padding: 15px 0px;
+}
+.box {
+    padding: 15px;
+    margin: 15px 0px;
+}
+.box h2, .projects h2 {
+    text-align: center;
+    margin: 15px 0px;
+}
+.skills ul {
+    display: flex;
+    justify-content: space-around;
+}
+/* Projects */
+.projects {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 15px;
+}
+.projects div {
+    width: 100%;
+}
+
+.box-project {
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 15px;
+    width: 90%;
+    margin: 15px 0px;
+    -webkit-box-shadow: 10px 10px 32px -7px rgba(0,0,0,0.55);
+    -moz-box-shadow: 10px 10px 32px -7px rgba(0,0,0,0.55);
+    box-shadow: 10px 10px 32px -7px rgba(0,0,0,0.55);
+    border-radius: 10px;
+}
+.box-project h3 {
+    color: #8c08a7;
+}
+.box-project button {
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    background-color: #8c08a7;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.box-project button:hover {
+    background-color: rgb(212, 0, 255);
+}
+.box-project p {
+    color:hsl(235, 13%, 35%);
+    margin: 15px 0px;
+    text-align: justify;
+}
+.box-project button a {
+    color:hsl(0, 0%, 100%);
+}
+
+footer {
+    height: 1;
+    color:hsl(0, 0%, 100%);
+    margin-top: 15px;
+    padding: 15px;
+    width: 100%;
+    background-color: #8c08a7;
+}
+footer form {
+    width: 100%;
+}
+footer form p {
+    font-weight: 400;
+}
+footer form input, footer form textarea {
+    color:hsl(0, 0%, 100%);
+    padding: 10px;
+    margin: 15px 0px;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid hsla(0, 0%, 100%, 0.205);
+}
+footer form textarea {
+    height: 80px;
+}
+
+footer form input::placeholder, footer form textarea::placeholder {
+    color:hsl(0, 0%, 100%);
+}
+footer h2 {
+    font-weight: 500;
+    margin: 15px 0px;
+}
+footer ul {
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+footer ul li {
+    margin: 0px 15px;
+}
+footer button {
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    margin: 15px 0px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+footer form button:hover {
+    color:hsl(0, 0%, 100%);
+    background-color: rgb(212, 0, 255);
+}
+
+@media screen and (min-width: 1024px) {
+    header a {
+        width: 20%;
+    }
+    .projects, .about-me, footer {
+        height: 100vh;
+    }
+    .about-me section {
+        text-align: justify;
+        margin: 0 auto;
+        width: 60%;
+    }
+    .projects div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .box-project {
+        margin: 0px 15px;
+        width: 30%;
+    }
+    .box-project h3 {
+        width: 80%;
+    }
+    .box-project p {
+        width: 80%;
+    }
+    footer {
+        padding-left: 50px;
+    }
+    footer form {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    footer button {
+        margin-left: 15px;
+    }
+    footer form input, footer form textarea {
+        margin: 20px 15px;
+        width: 90%;
+        height: 50px;
+    }
+}
