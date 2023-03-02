@@ -88,7 +88,6 @@ header a:hover {
     display: flex;
     justify-content: space-around;
 }
-/* Projects */
 .projects {
     width: 100%;
     margin: 5px 0px;
@@ -104,9 +103,6 @@ header a:hover {
     padding: 15px;
     width: 90%;
     margin: 15px 0px;
-    -webkit-box-shadow: 10px 10px 32px -7px rgba(0,0,0,0.55);
-    -moz-box-shadow: 10px 10px 32px -7px rgba(0,0,0,0.55);
-    box-shadow: 10px 10px 32px -7px rgba(0,0,0,0.55);
     border-radius: 10px;
 }
 .box-project h3 {
@@ -211,10 +207,7 @@ footer form button:hover {
         margin: 0px 15px;
         width: 30%;
     }
-    .box-project h3 {
-        width: 80%;
-    }
-    .box-project p {
+    .box-project h3, .box-project p {
         width: 80%;
     }
     footer {
